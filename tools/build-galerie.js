@@ -58,7 +58,7 @@ const html = `${head}${header}<main id="obsah">
     <div class="wrap">
       <p class="eyebrow">Ukázky práce</p>
       <h1>Realizace</h1>
-      <p>Výběr zakázek z posledních let. Vyberte si, co vás zajímá.</p>
+      <p>Výběr zakázek z posledních let, roztříděný podle služeb. Vyberte si záložku a kliknutím fotku zvětšíte.</p>
     </div>
   </section>
 

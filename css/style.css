@@ -310,3 +310,8 @@ main { min-height: calc(100vh - 72px - 220px); }
 .page-head .eyebrow { margin-bottom: 1em; }
 .page-head + .legal { padding-top: 48px; }
 .page-head + .section .gallery-cta { margin-top: 0; }
+
+/* Tmavý pruh s nadpisem má na všech podstránkách stejnou výšku */
+.page-head { min-height: 276px; display: flex; align-items: flex-end; }
+.page-head .wrap { width: min(1160px, 100% - 32px); }
+@media (max-width: 700px) { .page-head { min-height: 324px; padding-top: 48px; } }
