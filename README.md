@@ -16,3 +16,8 @@ Náhled: https://patrikfanta-cze.github.io/kucirek-web/
 - Texty k potvrzení klientem: služby (reklamní konstrukce = co přesně?), zaměření a montáž, povrchové úpravy, dílna v Brné na adrese sídla?, doby uchování v zásadách.
 - Vlastní doména: URL je napevno v canonical, og:image, JSON-LD (index.html), robots.txt, sitemap.xml a `<base>` v 404.html.
 - Logo je ořez z FB titulní fotky (raster) – vyžádat vektor.
+
+## Bezpečnost (přání klienta 2026-10-04)
+- Žádné fotky dílny ani dvora (riziko vykradení). Vyřazené fotky jsou v img/fb/vyrazene (mimo repo).
+- Adresa na webu jen „Ústí nad Labem“, žádná mapa. Působnost: hlavně severní Čechy, po domluvě i jinde.
+- Výjimka: sídlo Sebuzínská 8 zůstává v patičce a v zásadách ochrany údajů – vyžaduje to § 435 OZ (identifikace podnikatele) a zásady GDPR. Odstranit jde jen se změnou sídla (např. virtuální sídlo).
