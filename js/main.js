@@ -2,6 +2,15 @@
 const rok = document.getElementById('rok');
 if (rok) rok.textContent = new Date().getFullYear();
 
+// Logo a „Nahoru“ – hlavička je přilepená, takže kotva #top by nikam neposunula
+document.querySelectorAll('a[href="#top"]').forEach(a =>
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    history.replaceState(null, '', location.pathname + location.search);
+  })
+);
+
 // Mobilní menu
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.getElementById('nav');

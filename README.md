@@ -9,8 +9,7 @@ Náhled: https://patrikfanta-cze.github.io/kucirek-web/
 - Doména zamecnictvikucirek.cz je registrovaná u WEDOS, web na ní je jen parkovací stránka
 
 ## Otevřené body
-- Fotky jsou z FB stránky klienta (2020). Chce to víc a novějších realizací, ideálně originály.
-- `img/brana.jpg` je ořez ze screenshotu Instagramu prostin.cz – ověřit, že bránu vyráběl Kučírek a že fotka smí být použita.
+- Galerie (`galerie.html`, 8 záložek podle služeb) má 106 fotek vybraných z FB alb klienta (2009–2025). Generuje ji `node tools/build-galerie.js` (s `--resize` znovu zmenší fotky z `img/fb/all/<kategorie>-*.jpg`, ty nejsou v repu). Souhlas klienta s použitím fotek a originály ve vyšším rozlišení zatím chybí.
 - Web3Forms: klíč založit na info@zamecnictvikucirek.cz a doplnit `WEB3FORMS_KEY` v `js/main.js`. Do té doby formulář odkazuje na e-mail/telefon.
 - GoatCounter: kód `kucirek`, web založený (4. 10. 2026), statistiky na kucirek.goatcounter.com.
 - Texty k potvrzení klientem: služby (reklamní konstrukce = co přesně?), zaměření a montáž, povrchové úpravy, dílna v Brné na adrese sídla?, doby uchování v zásadách.
