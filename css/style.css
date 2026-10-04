@@ -315,3 +315,9 @@ main { min-height: calc(100vh - 72px - 220px); }
 .page-head { min-height: 276px; display: flex; align-items: flex-end; }
 .page-head .wrap { width: min(1160px, 100% - 32px); }
 @media (max-width: 700px) { .page-head { min-height: 324px; padding-top: 48px; } }
+
+/* Nadpisy 2. úrovně, které vypadají jako h3 (správné pořadí nadpisů pro čtečky) */
+h2.h3 { font-size: 1.55rem; font-weight: 700; text-transform: none; }
+.area h2.h3 { font-size: 1.35rem; margin-bottom: .3em; }
+.section--dark h2.h3 { color: #fff; }
+#kontakt .area h2.h3, .form h2.h3 { color: var(--ink); }
