@@ -33,9 +33,10 @@ if (process.argv.includes('--resize')) {
 
 const index = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const privacy = fs.readFileSync(path.join(root, 'ochrana-osobnich-udaju.html'), 'utf8');
-const head = privacy.slice(0, privacy.indexOf('<main'))
+const head = privacy.slice(0, privacy.indexOf('<body>'))
   .replace(/<title>[^<]*<\/title>/, '<title>Realizace | Zámečnictví Milan Kučírek, Ústí nad Labem</title>')
   .replace(/<meta name="description"[^>]*>/, '<meta name="description" content="Fotky realizací Zámečnictví Milan Kučírek: brány, ploty, zábradlí, schodiště, mříže, přístřešky, reklamní konstrukce a kovovýroba na zakázku.">');
+const header = privacy.slice(privacy.indexOf("<body>"), privacy.indexOf("<main")).replace('<a href="galerie.html">', '<a href="galerie.html" aria-current="page">');
 const foot = privacy.slice(privacy.indexOf('<footer'), privacy.indexOf('</footer>') + 9);
 
 const tabs = [], panels = [];
@@ -52,7 +53,7 @@ ${nums.map((f, i) => `        <a href="img/galerie/${id}/${f}"><img src="img/gal
     </section>`);
 }
 
-const html = `${head}<main id="obsah">
+const html = `${head}${header}<main id="obsah">
   <section class="page-head">
     <div class="wrap">
       <p class="eyebrow">Ukázky práce</p>
@@ -74,7 +75,7 @@ ${panels.join('\n\n')}
 
     <div class="gallery-cta">
       <p>Líbí se vám něco podobného? Rádi vám připravíme nabídku.</p>
-      <a class="btn" href="index.html#kontakt">Poptat zakázku</a>
+      <a class="btn" href="kontakt.html">Poptat zakázku</a>
     </div>
   </div>
 </main>
@@ -89,7 +90,7 @@ ${foot}
   <p class="lightbox__caption"></p>
 </dialog>
 
-<script src="js/main.js?v=2"></script>
+<script src="js/main.js?v=3"></script>
 <script src="js/galerie.js?v=1"></script>
 <!-- Anonymní měření návštěvnosti bez cookies (GoatCounter), skript hostovaný lokálně -->
 <script data-goatcounter="https://kucirek.goatcounter.com/count" async src="js/count.js"></script>

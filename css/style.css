@@ -262,3 +262,31 @@ p { margin: 0 0 1em; }
 .lightbox__prev { left: 8px; }
 .lightbox__next { right: 8px; }
 .realizace-more { margin-top: 28px; }
+
+/* Aktivní položka menu */
+.nav a[aria-current="page"] { color: var(--spark-text); box-shadow: inset 0 -3px 0 var(--spark); }
+@media (max-width: 860px) { .nav a[aria-current="page"] { box-shadow: inset 3px 0 0 var(--spark); padding-left: 10px; } }
+
+/* Podstránky – ať patička nevisí uprostřed obrazovky */
+main { min-height: calc(100vh - 72px - 220px); }
+.page-head + .section { padding-top: 56px; }
+
+/* Rozcestník na úvodu */
+.crossroads { padding: 56px 0 72px; }
+.crossroads__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.tile { position: relative; display: block; aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius); background: var(--ink); color: #fff; text-decoration: none; }
+.tile img { width: 100%; height: 100%; object-fit: cover; opacity: .75; transition: transform .4s, opacity .3s; }
+.tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 35%, rgba(15,17,19,.9)); }
+.tile__text { position: absolute; left: 18px; right: 18px; bottom: 16px; z-index: 1; }
+.tile__text strong { display: block; font: 800 1.7rem/1.1 var(--head); text-transform: uppercase; }
+.tile__text strong::after { content: " →"; color: var(--spark); }
+.tile__text span { font-size: .95rem; color: #e6e8eb; }
+.tile:hover img { transform: scale(1.05); opacity: .9; }
+@media (max-width: 900px) { .crossroads__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .crossroads__grid { gap: 10px; } .tile__text { left: 12px; right: 12px; bottom: 10px; } .tile__text strong { font-size: 1.3rem; } .tile__text span { font-size: .85rem; } }
+.page-head + .section--dark { padding-top: 16px; }
+.section--cta { padding: 0 0 80px; }
+.section--alt + .section--cta { background: #ebe8e2; }
+.cta-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn--line { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn--line:hover { background: var(--ink); color: #fff; border-color: var(--ink); }

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://patrikfanta-cze.github.io/kucirek-web/</loc></url>
+  <url><loc>https://patrikfanta-cze.github.io/kucirek-web/sluzby.html</loc></url>
   <url><loc>https://patrikfanta-cze.github.io/kucirek-web/galerie.html</loc></url>
+  <url><loc>https://patrikfanta-cze.github.io/kucirek-web/postup.html</loc></url>
+  <url><loc>https://patrikfanta-cze.github.io/kucirek-web/o-nas.html</loc></url>
+  <url><loc>https://patrikfanta-cze.github.io/kucirek-web/kontakt.html</loc></url>
   <url><loc>https://patrikfanta-cze.github.io/kucirek-web/ochrana-osobnich-udaju.html</loc></url>
 </urlset>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt | Zámečnictví Milan Kučírek, Ústí nad Labem</title>
+<meta name="description" content="Kontakt na Zámečnictví Milan Kučírek: tel. 721 227 162, info@zamecnictvikucirek.cz, Sebuzínská 8, Ústí nad Labem – Brná. Poptávkový formulář.">
+<link rel="canonical" href="https://patrikfanta-cze.github.io/kucirek-web/kontakt.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kontakt | Zámečnictví Milan Kučírek">
+<meta property="og:description" content="Kontakt na Zámečnictví Milan Kučírek: tel. 721 227 162, info@zamecnictvikucirek.cz, Sebuzínská 8, Ústí nad Labem – Brná. Poptávkový formulář.">
+<meta property="og:image" content="https://patrikfanta-cze.github.io/kucirek-web/img/hero.jpg">
+<meta property="og:locale" content="cs_CZ">
+<meta name="theme-color" content="#17191c">
+<link rel="icon" href="favicon.svg?v=1" type="image/svg+xml">
+<link rel="stylesheet" href="css/fonts.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+<header class="header" id="top">
+  <div class="wrap header__inner">
+    <a class="brand" href="index.html" aria-label="Zámečnictví Milan Kučírek – úvod">
+      <img src="img/logo.png?v=1" alt="Zámečnictví Milan Kučírek" width="830" height="240">
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
+      <span class="nav-toggle__bars" aria-hidden="true"></span><span class="sr">Menu</span>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="sluzby.html">Služby</a>
+      <a href="galerie.html">Realizace</a>
+      <a href="postup.html">Jak to probíhá</a>
+      <a href="o-nas.html">O nás</a>
+      <a href="kontakt.html" aria-current="page">Kontakt</a>
+      <a class="btn btn--small" href="tel:+420721227162">721 227 162</a>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Kontakt</p>
+      <h1>Poptejte nás</h1>
+      <p>Nejrychlejší je zavolat. Když nezvedneme, jsme nejspíš u svářečky, ozveme se zpátky.</p>
+    </div>
+  </section>
+
+<section class="section section--dark" id="kontakt">
+    <div class="wrap contact">
+      <div class="contact__info">
+        <ul class="contact__list">
+          <li><span>Telefon</span><a href="tel:+420721227162">721 227 162</a></li>
+          <li><span>E-mail</span><a href="mailto:info@zamecnictvikucirek.cz">info@zamecnictvikucirek.cz</a></li>
+          <li><span>Adresa</span>Sebuzínská 8, 403 21 Ústí nad Labem – Brná</li>
+          <li><span>Facebook</span><a href="https://www.facebook.com/ZamecnictviKucirek/" target="_blank" rel="noopener">ZamecnictviKucirek</a></li>
+        </ul>
+
+        <div class="map map-consent" id="map">
+          <div class="map-inner">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            <b>Sebuzínská 8, Ústí nad Labem – Brná</b>
+            <p>Mapa se načítá ze služby Google. Po zobrazení může Google zpracovávat údaje o vaší návštěvě.</p>
+            <div class="map-actions">
+              <button type="button" class="btn btn--small" id="map-load">Zobrazit mapu</button>
+              <a class="btn btn--small btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Sebuz%C3%ADnsk%C3%A1+8%2C+403+21+%C3%9Ast%C3%AD+nad+Labem" target="_blank" rel="noopener">Otevřít v Google Mapách</a>
+            </div>
+          </div>
+          <span class="map-credit">Mapová data © Google</span>
+        </div>
+      </div>
+
+      <form class="form" id="poptavka" novalidate>
+        <h3>Poptávkový formulář</h3>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Jméno<input name="jmeno" required autocomplete="name"></label>
+        <div class="form__row">
+          <label>Telefon<input name="telefon" type="tel" autocomplete="tel"></label>
+          <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+        </div>
+        <label>Co potřebujete
+          <select name="sluzba">
+            <option>Brána nebo branka</option>
+            <option>Plot</option>
+            <option>Zábradlí</option>
+            <option>Mříže</option>
+            <option>Reklamní konstrukce</option>
+            <option>Jiná kovovýroba</option>
+            <option>Oprava</option>
+          </select>
+        </label>
+        <label>Popis zakázky<textarea name="zprava" rows="5" placeholder="Např. posuvná brána 4 m na příjezd k rodinnému domu v Trmicích, antracit, připravit na pohon."></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required>
+          <span>Beru na vědomí, jak Zámečnictví Milan Kučírek zpracovává moje <a href="ochrana-osobnich-udaju.html" target="_blank">osobní údaje</a> pro vyřízení poptávky.</span></label>
+        <button class="btn" type="submit">Odeslat poptávku</button>
+        <p class="form__status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <img class="footer__logo" src="img/logo-white.png?v=1" alt="" width="830" height="240" loading="lazy">
+    <span>© <span id="rok">2026</span> Milan Kučírek · IČO 41333578 · Sebuzínská 8, 403 21 Ústí nad Labem<br>Fyzická osoba zapsaná v živnostenském rejstříku.</span>
+    <span class="footer__links"><a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a> · <a href="#top">Nahoru ↑</a></span>
+    <p class="made">Web vytvořil <a href="mailto:patrik.fanta@gmail.com">Patrik Fanta</a></p>
+  </div>
+</footer>
+
+<a class="call-fab" href="tel:+420721227162" aria-label="Zavolat na 721 227 162">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+</a>
+
+<script src="js/main.js?v=3"></script>
+<!-- Anonymní měření návštěvnosti bez cookies (GoatCounter), skript hostovaný lokálně -->
+<script data-goatcounter="https://kucirek.goatcounter.com/count" async src="js/count.js"></script>
+</body>
+</html>

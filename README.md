@@ -1,6 +1,7 @@
 # Zámečnictví Milan Kučírek – web (koncept)
 
 Statický web (HTML/CSS/JS) pro Zámečnictví Milan Kučírek, Ústí nad Labem – Brná.
+Stránky: index (úvod + rozcestník), sluzby, galerie (generuje tools/build-galerie.js z hlavičky ochrana-osobnich-udaju.html), postup, o-nas, kontakt, ochrana-osobnich-udaju, 404. Hlavička a patička jsou v každém souboru zvlášť – při změně menu upravit všechny a znovu spustit build galerie.
 Náhled: https://patrikfanta-cze.github.io/kucirek-web/
 
 ## Údaje o klientovi
