@@ -308,3 +308,5 @@ main { min-height: calc(100vh - 72px - 220px); }
 
 /* Nadpis s háčkem (Ř, Č…) nesmí narážet do čárky nad ním */
 .page-head .eyebrow { margin-bottom: 1em; }
+.page-head + .legal { padding-top: 48px; }
+.page-head + .section .gallery-cta { margin-top: 0; }
