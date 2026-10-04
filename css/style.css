@@ -296,3 +296,15 @@ main { min-height: calc(100vh - 72px - 220px); }
 .area svg { flex: none; width: 34px; height: 34px; fill: var(--spark); margin-top: 2px; }
 .area h3 { font-size: 1.35rem; margin-bottom: .3em; }
 .area p { margin: 0; color: #d9dde2; }
+
+/* Kontakt na světlém pozadí (jednotně s ostatními podstránkami) */
+#kontakt .contact__list li { border-bottom-color: #dcd8d0; }
+#kontakt .contact__list span { color: var(--muted); }
+#kontakt .contact__list a { color: var(--spark-text); }
+#kontakt .area { background: var(--white); border-color: #dcd8d0; border-left-color: var(--spark); }
+#kontakt .area h3 { color: var(--ink); }
+#kontakt .area p { color: var(--muted); }
+#kontakt .form { border: 1px solid #dcd8d0; border-top: 4px solid var(--spark); }
+
+/* Nadpis s háčkem (Ř, Č…) nesmí narážet do čárky nad ním */
+.page-head .eyebrow { margin-bottom: 1em; }
