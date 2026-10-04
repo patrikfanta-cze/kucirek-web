@@ -11,9 +11,11 @@ Náhled: https://patrikfanta-cze.github.io/kucirek-web/
 
 ## Otevřené body
 - Galerie (`galerie.html`, 8 záložek podle služeb) má 104 fotek vybraných z FB alb klienta (2009–2025). Generuje ji `node tools/build-galerie.js` (s `--resize` znovu zmenší fotky z `img/fb/all/<kategorie>-*.jpg`, ty nejsou v repu). Klient použití fotek schválil (2026-10-04); originály ve vyšším rozlišení by se hodily.
-- Web3Forms: klíč založit na info@zamecnictvikucirek.cz a doplnit `WEB3FORMS_KEY` v `js/main.js`. Do té doby formulář odkazuje na e-mail/telefon.
+- Formulář zrušen (rozhodnutí klienta 2026-10-05): na Kontaktu je jen e-mail a telefon. Web3Forms se nepoužívá.
+- Reklamace (reklamace.html): podle zákona + pozáruční servis na zavolání (klient 2026-10-05). Text není od právníka.
+- Doby uchování v zásadách potvrzeny klientem (zákonné: poptávky 1 rok, zakázky 3 roky promlčení, účetnictví 10 let).
 - GoatCounter: kód `kucirek`, web založený (4. 10. 2026), statistiky na kucirek.goatcounter.com, ověřeno že počítá.
-- Texty k potvrzení klientem: služby (reklamní konstrukce = co přesně?), zaměření a montáž, povrchové úpravy, dílna v Brné na adrese sídla?, doby uchování v zásadách.
+- Texty k potvrzení klientem: služby (reklamní konstrukce = co přesně?), zaměření a montáž, povrchové úpravy, dílna v Brné na adrese sídla?.
 - Vlastní doména: URL je napevno v canonical, og:image, JSON-LD (index.html), robots.txt, sitemap.xml a `<base>` v 404.html.
 - Logo je ořez z FB titulní fotky (raster) – vyžádat vektor.
 

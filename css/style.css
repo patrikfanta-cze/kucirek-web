@@ -321,3 +321,14 @@ h2.h3 { font-size: 1.55rem; font-weight: 700; text-transform: none; }
 .area h2.h3 { font-size: 1.35rem; margin-bottom: .3em; }
 .section--dark h2.h3 { color: #fff; }
 #kontakt .area h2.h3, .form h2.h3 { color: var(--ink); }
+
+/* Kontakt: Napište nám (místo formuláře) */
+.mailbox p { color: var(--muted); margin: 0 0 22px; }
+.mailbox__actions { display: flex; flex-direction: column; gap: 10px; }
+.mailbox__actions .btn { justify-content: center; overflow-wrap: anywhere; }
+
+/* Reklamace: postup */
+.steps-list { list-style: none; padding: 0; margin: 16px 0 0; counter-reset: k; }
+.steps-list li { counter-increment: k; position: relative; padding: 0 0 18px 52px; margin: 0; }
+.steps-list li::before { content: counter(k); position: absolute; left: 0; top: 0; width: 36px; height: 36px; border-radius: 50%; background: var(--spark); color: var(--ink); font: 800 1.2rem/36px var(--head); text-align: center; }
+.steps-list b { display: block; font-size: 1.05rem; margin-bottom: 2px; }

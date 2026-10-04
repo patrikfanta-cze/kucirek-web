@@ -90,7 +90,7 @@ ${foot}
   <p class="lightbox__caption"></p>
 </dialog>
 
-<script src="js/main.js?v=3"></script>
+<script src="js/main.js?v=4"></script>
 <script src="js/galerie.js?v=1"></script>
 <!-- Anonymní měření návštěvnosti bez cookies (GoatCounter), skript hostovaný lokálně -->
 <script data-goatcounter="https://kucirek.goatcounter.com/count" async src="js/count.js"></script>
