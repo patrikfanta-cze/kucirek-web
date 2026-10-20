@@ -10,7 +10,7 @@ Náhled: https://patrikfanta-cze.github.io/kucirek-web/
 - Doména zamecnictvikucirek.cz je registrovaná u WEDOS, web na ní je jen parkovací stránka
 
 ## Otevřené body
-- Galerie (`galerie.html`, 8 záložek podle služeb) má 104 fotek vybraných z FB alb klienta (2009–2025). Generuje ji `node tools/build-galerie.js` (s `--resize` znovu zmenší fotky z `img/fb/all/<kategorie>-*.jpg`, ty nejsou v repu). Klient použití fotek schválil (2026-10-04); originály ve vyšším rozlišení by se hodily.
+- Galerie (`galerie.html`, 8 záložek): fotky z FB alb + sdílené album Google Fotky „Zakázky“ od Ondřeje Kučírka (https://photos.app.goo.gl/Tvro6KWYwamKArpt8, 393 fotek k 2026-10-20). Nové fotky z alba: `node tools/stahni-google-fotky.js` (stáhne jen nové do img/fb/gp), vybrané zkopírovat do img/fb/all/<kategorie>-0<9999-poradi>.jpg (novější první) a `node tools/build-galerie.js --resize`. Fotky dílny nepoužívat. Obrázky na úvodu a O nás jsou pevné kopie v img/uvod/ a img/o-nas.jpg.
 - Formulář zrušen (rozhodnutí klienta 2026-10-05): na Kontaktu je jen e-mail a telefon. Web3Forms se nepoužívá.
 - Reklamace (reklamace.html): podle zákona + pozáruční servis na zavolání (klient 2026-10-05). Text není od právníka.
 - Doby uchování v zásadách potvrzeny klientem (zákonné: poptávky 1 rok, zakázky 3 roky promlčení, účetnictví 10 let).
