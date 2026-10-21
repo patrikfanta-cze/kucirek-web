@@ -54,13 +54,23 @@ if (lightbox && lightbox.showModal) {
   lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.close(); });
 }
 
+// Výběr čísla u tlačítek Zavolat: otevřený může být jen jeden, zavře se kliknutím mimo nebo Esc
+const callmenus = [...document.querySelectorAll(".callmenu")];
+callmenus.forEach(d => d.addEventListener("toggle", () => {
+  if (d.open) callmenus.forEach(o => { if (o !== d) o.open = false; });
+}));
+document.addEventListener("click", e => callmenus.forEach(d => { if (d.open && !d.contains(e.target)) d.open = false; }));
+document.addEventListener("keydown", e => { if (e.key === "Escape") callmenus.forEach(d => { d.open = false; }); });
+
 // Plovoucí tlačítko Zavolat – po odscrollování z úvodu, schované u kontaktu
 const fab = document.querySelector('.call-fab');
 const contact = document.getElementById('kontakt');
 if (fab) {
   const updateFab = () => {
     const contactVisible = contact && contact.getBoundingClientRect().top < innerHeight;
-    fab.classList.toggle('is-shown', scrollY > 500 && !contactVisible);
+    const show = scrollY > 500 && !contactVisible;
+    fab.classList.toggle('is-shown', show);
+    if (!show) fab.open = false;
   };
   addEventListener('scroll', updateFab, { passive: true });
   updateFab();

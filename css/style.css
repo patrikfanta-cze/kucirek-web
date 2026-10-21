@@ -332,3 +332,44 @@ h2.h3 { font-size: 1.55rem; font-weight: 700; text-transform: none; }
 .steps-list li { counter-increment: k; position: relative; padding: 0 0 18px 52px; margin: 0; }
 .steps-list li::before { content: counter(k); position: absolute; left: 0; top: 0; width: 36px; height: 36px; border-radius: 50%; background: var(--spark); color: var(--ink); font: 800 1.2rem/36px var(--head); text-align: center; }
 .steps-list b { display: block; font-size: 1.05rem; margin-bottom: 2px; }
+
+/* Zavolat – výběr ze dvou čísel (Milan / Ondřej) */
+.callmenu { position: relative; display: inline-block; }
+.callmenu > summary { list-style: none; cursor: pointer; user-select: none; }
+.callmenu > summary::-webkit-details-marker { display: none; }
+.btn--small svg { width: 16px; height: 16px; }
+.callmenu__list { position: absolute; right: 0; top: calc(100% + 6px); z-index: 60; min-width: 240px; display: flex; flex-direction: column; padding: 6px;
+  background: var(--white); border: 1px solid #dcd8d0; border-radius: var(--radius); box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+.callmenu__list a, .nav .callmenu__list a { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 10px 12px; border: 0; box-shadow: none;
+  color: var(--ink); text-decoration: none; border-radius: var(--radius); }
+.callmenu__list a:hover, .callmenu__list a:focus-visible { background: var(--paper); }
+.callmenu__list span { font-size: .9rem; color: var(--muted); }
+.callmenu__list b { font-weight: 600; white-space: nowrap; }
+.hero .callmenu__list, .cta-actions .callmenu__list { left: 0; right: auto; }
+.callmenu--up .callmenu__list { top: auto; bottom: calc(100% + 10px); }
+@media (max-width: 860px) {
+  .nav .callmenu { display: block; margin-top: 12px; }
+  .nav .callmenu > summary { width: 100%; justify-content: center; margin-top: 0; }
+  .nav .callmenu__list { position: static; box-shadow: none; margin-top: 6px; }
+}
+
+/* Plovoucí tlačítko na mobilu je teď <details> */
+details.call-fab { width: auto; height: auto; background: none; box-shadow: none; border-radius: 0; display: none; }
+details.call-fab:not(.is-shown) { pointer-events: none; }
+.call-fab__btn { width: 58px; height: 58px; border-radius: 50%; background: var(--spark); display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(0,0,0,.3); }
+.call-fab__btn svg { width: 26px; height: 26px; fill: var(--ink); }
+.call-fab .callmenu__list { right: 0; }
+@media (max-width: 860px) { details.call-fab { display: block; } }
+
+/* Kontakt: otec a syn */
+.people { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+.person { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 22px 14px 18px; background: var(--white);
+  border: 1px solid #dcd8d0; border-radius: var(--radius); color: var(--ink); text-decoration: none; transition: border-color .2s; }
+.person:hover { border-color: var(--spark); }
+.person__avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--spark); color: var(--ink); display: flex; align-items: center; justify-content: center;
+  font: 800 1.35rem/1 var(--head); margin-bottom: 10px; }
+.person b { font-size: 1.05rem; }
+.person__role { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 2px 0 12px; }
+.person__tel { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--spark-text); white-space: nowrap; }
+.person__tel svg { width: 16px; height: 16px; fill: currentColor; }
+@media (max-width: 380px) { .people { grid-template-columns: 1fr; } }
