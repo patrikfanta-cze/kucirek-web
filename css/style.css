@@ -354,7 +354,7 @@ h2.h3 { font-size: 1.55rem; font-weight: 700; text-transform: none; }
 }
 
 /* Plovoucí tlačítko na mobilu je teď <details> */
-details.call-fab { width: auto; height: auto; background: none; box-shadow: none; border-radius: 0; display: none; }
+details.call-fab { position: fixed; right: 16px; bottom: 16px; width: auto; height: auto; background: none; box-shadow: none; border-radius: 0; display: none; }
 details.call-fab:not(.is-shown) { pointer-events: none; }
 .call-fab__btn { width: 58px; height: 58px; border-radius: 50%; background: var(--spark); display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(0,0,0,.3); }
 .call-fab__btn svg { width: 26px; height: 26px; fill: var(--ink); }
