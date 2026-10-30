@@ -15,7 +15,7 @@ Web: https://zamecnictvikucirek.cz/ (od 2026-10-30, DNS u WEDOS: 4× A + 4× AAA
 - Reklamace (reklamace.html): podle zákona + pozáruční servis na zavolání (klient 2026-10-05). Text není od právníka.
 - Doby uchování v zásadách potvrzeny klientem (zákonné: poptávky 1 rok, zakázky 3 roky promlčení, účetnictví 10 let).
 - GoatCounter: kód `kucirek`, web založený (4. 10. 2026), statistiky na kucirek.goatcounter.com, ověřeno že počítá.
-- Texty k potvrzení klientem: služby (reklamní konstrukce = co přesně?), zaměření a montáž, povrchové úpravy, dílna v Brné na adrese sídla?.
+- Texty k potvrzení klientem: služby (reklamní konstrukce = co přesně?), zaměření a montáž, povrchové úpravy.
 - Vlastní doména zamecnictvikucirek.cz napojená 2026-10-30 (soubor CNAME v repu).
 - Logo je ořez z FB titulní fotky (raster) – vyžádat vektor.
 
