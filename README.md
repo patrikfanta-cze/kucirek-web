@@ -2,7 +2,7 @@
 
 Statický web (HTML/CSS/JS) pro Zámečnictví Milan Kučírek, Ústí nad Labem – Brná.
 Stránky: index (úvod + rozcestník), sluzby, galerie (generuje tools/build-galerie.js z hlavičky ochrana-osobnich-udaju.html), postup, o-nas, kontakt, ochrana-osobnich-udaju, 404. Hlavička a patička jsou v každém souboru zvlášť – při změně menu upravit všechny a znovu spustit build galerie.
-Náhled: https://patrikfanta-cze.github.io/kucirek-web/
+Web: https://zamecnictvikucirek.cz/ (od 2026-10-30, DNS u WEDOS: 4× A + 4× AAAA na GitHub Pages, www CNAME; MX Google nechat)
 
 ## Údaje o klientovi
 - Milan Kučírek, IČO 41333578, Sebuzínská 8, Brná, 403 21 Ústí nad Labem (ARES, živnost od 10. 8. 1992), plátce DPH
@@ -16,7 +16,7 @@ Náhled: https://patrikfanta-cze.github.io/kucirek-web/
 - Doby uchování v zásadách potvrzeny klientem (zákonné: poptávky 1 rok, zakázky 3 roky promlčení, účetnictví 10 let).
 - GoatCounter: kód `kucirek`, web založený (4. 10. 2026), statistiky na kucirek.goatcounter.com, ověřeno že počítá.
 - Texty k potvrzení klientem: služby (reklamní konstrukce = co přesně?), zaměření a montáž, povrchové úpravy, dílna v Brné na adrese sídla?.
-- Vlastní doména: URL je napevno v canonical, og:image, JSON-LD (index.html), robots.txt, sitemap.xml a `<base>` v 404.html.
+- Vlastní doména zamecnictvikucirek.cz napojená 2026-10-30 (soubor CNAME v repu).
 - Logo je ořez z FB titulní fotky (raster) – vyžádat vektor.
 
 ## Bezpečnost (přání klienta 2026-10-04)
